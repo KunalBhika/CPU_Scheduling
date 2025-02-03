@@ -23,7 +23,7 @@ int main()
         {4, 6, 7, 0, 0, 0, 0}  // P4
     };
 
-    inputProcesses = fcfs(inputProcesses);
+    inputProcesses = sjf(inputProcesses);
     printOutput(inputProcesses);
 
     // Just to see the output at the terminal and hold
