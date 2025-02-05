@@ -18,7 +18,7 @@ std::vector<Process> fcfs(std::vector<Process> &processes);
 std::vector<Process> sjf(std::vector<Process> &processes);
 std::vector<Process> srtf(std::vector<Process> &processes);
 std::vector<Process> priorityScheduling(std::vector<Process> &processes);
-std::vector<Process> rr(std::vector<Process> &processes);
+std::vector<Process> rr(std::vector<Process> &processes , int tq);
 std::vector<Process> mlq(std::vector<Process> &processes);
 
 #endif
