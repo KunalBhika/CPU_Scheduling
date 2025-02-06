@@ -17,19 +17,19 @@ void printOutput(vector<Process> &inputProcesses)
 int main()
 {
     vector<Process> inputProcesses = {
-        {1, 0, 5, 0, 0, 0, 0}, // P1
-        {2, 2, 3, 0, 0, 0, 0}, // P2
-        {3, 4, 1, 0, 0, 0, 0}, // P3
-        {4, 6, 7, 0, 0, 0, 0}  // P4
+        {1, 0, 5, 3, 0, 0, 0}, // P1 (Priority 3)
+        {2, 2, 3, 1, 0, 0, 0}, // P2 (Priority 1 - Highest)
+        {3, 4, 1, 4, 0, 0, 0}, // P3 (Priority 4 - Lowest)
+        {4, 6, 7, 2, 0, 0, 0}  // P4 (Priority 2)
     };
 
-    inputProcesses = rr(inputProcesses , 2);
+    inputProcesses = priorityScheduling_P(inputProcesses);
     printOutput(inputProcesses);
 
     // Just to see the output at the terminal and hold
     int a = 0;
     cin >> a;
     // *******
-    
+
     return 0;
 }
